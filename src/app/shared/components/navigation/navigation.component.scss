@@ -12,19 +12,35 @@
 
       &:hover {
         color: yellow;
-        transform: scale(1.04);
+        transform: scale(1.1);
       }
     }
 
-    a.write-tweet {
-      font-size: 24px;
+    #write-tweet {
+      font-size: 25px;
       color: white;
       text-decoration: none;
 
       &:hover {
         color: yellow;
-        transform: scale(1.04);
+        transform: scale(1.05);
       }
+    }
+  }
+
+  #write-tweet i {
+
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
     }
   }
 }
